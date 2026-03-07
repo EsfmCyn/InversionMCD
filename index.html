@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        MathJax = {
+            loader: {
+                load: ['[tex]/units', '[tex]/newcommand']
+            },
+            tex: {
+                packages: {'[+]': ['units', 'newcommand']}
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+
+    <title>Inversos</title>
+</head>
+<body>
+    <header>
+        <div class="latexCommands">
+            \( \newcommand{\Z}{\mathbb{Z}} \)
+        </div>
+        <section class="titulo">
+            <figure>
+                <a href="#" class="enlaceLogo">
+                    <img src="img/logoGtProyectos.png" alt="Logotipo GTProyectos">
+                </a>
+            </figure>
+            <h1>Inversión en \( \unitfrac{\Z}{n\Z} \)</h1>
+        </section>
+        <nav class="menuPrincipal">
+            <ul>
+                <li>Inversos</li>
+                <li>MCD</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido">
+        <section class="descripsion">
+            <article>
+                <h2> \(\unitfrac{\Z}{n\Z} := \{ [0], [1], ..., [n-1] \} \) </h2>
+                <p>Antes de poder calcular el inverso de la clase \([x] \in \unitfrac{\Z}{n\Z} \), es necesario comprobar si es una <strong>unidad</strong>. Para ello se comprueba si \( (x, n) = 1\).</p>
+                <h3>Calculo de \( [x]^{-1} \)</h3>
+                <p>Ya que \( (x, n) = 1 \), se puede aplicar la <strong>identidad de Bezout</strong></p>
+                <p class="ecuacion">\( sx + tn = 1 \) con \(s, t \in \Z\).</p>
+                <p>Al tomar clases de equivalencia se obtiene que</p>
+                <p class="ecuacion">\( [1] = [sx + tn] = [sx] + [tn] = [s][x] \).</p>
+                <p>Esto nos dice que el inverso de \( [x] \) es \( [s] \).</p>
+            </article>
+        </section>
+        <section class="calculadora">
+            <div class="insercionN">
+                <p class="n">n = </p><input type="number" class="inputN">
+            </div>
+            <div class="insercionNumero">
+                <p class="numero"> x = </p><input type="number" class="inputNumero">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
