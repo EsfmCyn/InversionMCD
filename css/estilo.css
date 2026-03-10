@@ -1,0 +1,41 @@
+* {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+.titulo .enlaceLogo img {
+    height: 10vh;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(149, 188, 255);
+}
+
+header .titulo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main.contenido {
+    width: 65%;
+    background-color: rgb(255, 235, 136);
+    padding: 25px;
+    margin: auto;
+}
+
+.descripsion {
+    text-align: justify;
+}
